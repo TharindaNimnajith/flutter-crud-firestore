@@ -76,7 +76,7 @@ class _AddItemFormState extends State<AddItemForm> {
                 ),
                 SizedBox(height: 8.0),
                 CustomFormField(
-                  maxLines: 10,
+                  maxLines: 7,
                   isLabelEnabled: false,
                   controller: _descriptionController,
                   focusNode: widget.descriptionFocusNode,
