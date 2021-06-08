@@ -1,6 +1,6 @@
 {
-  "name": "flutterfire_samples",
-  "short_name": "flutterfire_samples",
+  "name": "flutter_crud_firestore",
+  "short_name": "flutter_crud_firestore",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#0175C2",
