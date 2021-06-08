@@ -1,8 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:flutterfire_samples/res/custom_colors.dart';
-import 'package:flutterfire_samples/screens/edit_screen.dart';
-import 'package:flutterfire_samples/utils/database.dart';
+
+import '../res/custom_colors.dart';
+import '../screens/edit_screen.dart';
+import '../utils/database.dart';
 
 class ItemList extends StatelessWidget {
   @override

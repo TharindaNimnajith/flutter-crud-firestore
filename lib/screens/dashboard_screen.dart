@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutterfire_samples/res/custom_colors.dart';
-import 'package:flutterfire_samples/screens/add_screen.dart';
-import 'package:flutterfire_samples/widgets/app_bar_title.dart';
-import 'package:flutterfire_samples/widgets/item_list.dart';
+
+import '../res/custom_colors.dart';
+import '../screens/add_screen.dart';
+import '../widgets/app_bar_title.dart';
+import '../widgets/item_list.dart';
 
 class DashboardScreen extends StatefulWidget {
   @override

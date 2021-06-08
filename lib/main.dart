@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutterfire_samples/screens/login_screen.dart';
+
+import '../screens/login_screen.dart';
 
 void main() {
   runApp(MyApp());

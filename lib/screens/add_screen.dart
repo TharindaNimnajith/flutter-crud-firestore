@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutterfire_samples/res/custom_colors.dart';
-import 'package:flutterfire_samples/widgets/add_item_form.dart';
-import 'package:flutterfire_samples/widgets/app_bar_title.dart';
+
+import '../res/custom_colors.dart';
+import '../widgets/add_item_form.dart';
+import '../widgets/app_bar_title.dart';
 
 class AddScreen extends StatelessWidget {
   final FocusNode _titleFocusNode = FocusNode();

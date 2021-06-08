@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutterfire_samples/res/custom_colors.dart';
-import 'package:flutterfire_samples/utils/database.dart';
-import 'package:flutterfire_samples/utils/validator.dart';
 
+import '../res/custom_colors.dart';
+import '../utils/database.dart';
+import '../utils/validator.dart';
 import 'custom_form_field.dart';
 
 class AddItemForm extends StatefulWidget {
