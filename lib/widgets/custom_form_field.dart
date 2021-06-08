@@ -18,7 +18,7 @@ class CustomFormField extends StatelessWidget {
     this.isLabelEnabled = true,
   })  : _emailController = controller,
         _emailFocusNode = focusNode,
-        _keyboardtype = keyboardType,
+        _keyboardType = keyboardType,
         _inputAction = inputAction,
         _label = label,
         _hint = hint,
@@ -27,7 +27,7 @@ class CustomFormField extends StatelessWidget {
 
   final TextEditingController _emailController;
   final FocusNode _emailFocusNode;
-  final TextInputType _keyboardtype;
+  final TextInputType _keyboardType;
   final TextInputAction _inputAction;
   final String _label;
   final String _hint;
@@ -43,7 +43,7 @@ class CustomFormField extends StatelessWidget {
       maxLines: maxLines,
       controller: _emailController,
       focusNode: _emailFocusNode,
-      keyboardType: _keyboardtype,
+      keyboardType: _keyboardType,
       obscureText: isObscure,
       textCapitalization:
           isCapitalized ? TextCapitalization.words : TextCapitalization.none,

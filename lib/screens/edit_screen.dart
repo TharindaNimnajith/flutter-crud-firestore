@@ -65,15 +65,12 @@ class _EditScreenState extends State<EditScreen> {
                       setState(() {
                         _isDeleting = true;
                       });
-
                       await Database.deleteItem(
                         docId: widget.documentId,
                       );
-
                       setState(() {
                         _isDeleting = false;
                       });
-
                       Navigator.of(context).pop();
                     },
                   ),

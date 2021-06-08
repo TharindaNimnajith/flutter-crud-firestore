@@ -116,21 +116,17 @@ class _AddItemFormState extends State<AddItemForm> {
                     onPressed: () async {
                       widget.titleFocusNode.unfocus();
                       widget.descriptionFocusNode.unfocus();
-
                       if (_addItemFormKey.currentState!.validate()) {
                         setState(() {
                           _isProcessing = true;
                         });
-
                         await Database.addItem(
                           title: _titleController.text,
                           description: _descriptionController.text,
                         );
-
                         setState(() {
                           _isProcessing = false;
                         });
-
                         Navigator.of(context).pop();
                       }
                     },

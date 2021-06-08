@@ -37,7 +37,6 @@ class _EditItemFormState extends State<EditItemForm> {
     _titleController = TextEditingController(
       text: widget.currentTitle,
     );
-
     _descriptionController = TextEditingController(
       text: widget.currentDescription,
     );
@@ -134,22 +133,18 @@ class _EditItemFormState extends State<EditItemForm> {
                     onPressed: () async {
                       widget.titleFocusNode.unfocus();
                       widget.descriptionFocusNode.unfocus();
-
                       if (_editItemFormKey.currentState!.validate()) {
                         setState(() {
                           _isProcessing = true;
                         });
-
                         await Database.updateItem(
                           docId: widget.documentId,
                           title: _titleController.text,
                           description: _descriptionController.text,
                         );
-
                         setState(() {
                           _isProcessing = false;
                         });
-
                         Navigator.of(context).pop();
                       }
                     },

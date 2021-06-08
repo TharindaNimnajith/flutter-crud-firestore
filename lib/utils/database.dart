@@ -12,12 +12,10 @@ class Database {
   }) async {
     DocumentReference documentReferencer =
         _mainCollection.doc(userUid).collection('items').doc();
-
     Map<String, dynamic> data = <String, dynamic>{
       "title": title,
       "description": description,
     };
-
     await documentReferencer
         .set(data)
         .whenComplete(() => print("Note item added to the database"))
@@ -31,12 +29,10 @@ class Database {
   }) async {
     DocumentReference documentReferencer =
         _mainCollection.doc(userUid).collection('items').doc(docId);
-
     Map<String, dynamic> data = <String, dynamic>{
       "title": title,
       "description": description,
     };
-
     await documentReferencer
         .update(data)
         .whenComplete(() => print("Note item updated in the database"))
@@ -46,7 +42,6 @@ class Database {
   static Stream<QuerySnapshot> readItems() {
     CollectionReference notesItemCollection =
         _mainCollection.doc(userUid).collection('items');
-
     return notesItemCollection.snapshots();
   }
 
@@ -55,7 +50,6 @@ class Database {
   }) async {
     DocumentReference documentReferencer =
         _mainCollection.doc(userUid).collection('items').doc(docId);
-
     await documentReferencer
         .delete()
         .whenComplete(() => print('Note item deleted from the database'))
